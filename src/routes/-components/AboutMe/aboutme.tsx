@@ -1,13 +1,12 @@
 import Aboutcontent from "./components/aboutcontent";
 import { OrbitingCirclesDemo } from "./components/orbit";
-// import { ThreeDCardDemo } from "./components/test";
 
 function Aboutme() {
   return (
     <>
-      <div className="h-screen flex justify-center items-center">
+      <div id="about" className="shrink-0 mt-80 ">
         <div className="flex justify-between w-full">
-          <div className="w-full flex relative ">
+          <div className="w-full flex relative h-full">
             <img
               src="/orbit-design.png"
               className="h-[29rem] absolute left-20"
@@ -16,7 +15,6 @@ function Aboutme() {
             <OrbitingCirclesDemo />
           </div>
           <Aboutcontent />
-          {/* <ThreeDCardDemo /> */}
         </div>
       </div>
     </>

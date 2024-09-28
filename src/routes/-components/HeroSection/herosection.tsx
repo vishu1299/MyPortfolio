@@ -4,18 +4,22 @@ import Introduction from "./Components/introduction";
 function Herosection() {
   return (
     <>
-      {/* <div className="flex flex-col justify-center items-center h-screen ">
-        <div className=" w-full relative">
-          <img className="absolute -z-10" src="/bg-1.png" alt="" />
+      <div className="flex flex-col justify-center items-center shrink-0 ">
+        <div className="w-full relative">
+          <img
+            className="absolute -z-10 size-full h-auto"
+            src="/bg-1.png"
+            alt=""
+          />
           <Header />
           <Introduction />
         </div>
-      </div> */}
+      </div>
 
-      <div className="">
+      {/* <div className="">
         <Header />
         <Introduction />
-      </div>
+      </div> */}
     </>
   );
 }

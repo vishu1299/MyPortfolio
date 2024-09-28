@@ -8,6 +8,10 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: #212428;
 }
+* {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

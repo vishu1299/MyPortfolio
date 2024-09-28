@@ -5,8 +5,8 @@ import Herosection from "./-components/HeroSection/herosection";
 export const Route = createFileRoute("/")({
   component: () => (
     <>
-      <div className="w-full  flex justify-center items-center ">
-        <div className=" max-w-[1536px]">
+      <div className=" flex justify-center items-center ">
+        <div className="w-[98%] max-w-[1536px]">
           <Herosection />
           <Aboutme />
         </div>

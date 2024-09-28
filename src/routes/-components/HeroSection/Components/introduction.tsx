@@ -2,35 +2,64 @@ import { AnimatedSubscribeButton } from "../../../../components/magicui/animated
 import { CheckIcon } from "lucide-react";
 import { FaDownload } from "react-icons/fa6";
 import { TypewriterEffectSmooth } from "../../../../components/ui/typewriter-effect";
+import { useState } from "react";
 // import { MaskContainer } from "../../../../components/ui/svg-mask-effect";
 
 function Introduction() {
+  const [isDownloaded, setIsDownloaded] = useState(false);
+  const downloadPDF = () => {
+    const pdfUrl = "/public/vishwas.pdf"; // Specify the URL or path to your PDF file
+    const fileName = "vishwas.pdf";
+
+    // Fetch the PDF file
+    fetch(pdfUrl)
+      .then((response) => response.blob()) // Convert the response to a Blob (binary large object)
+      .then((blob) => {
+        // Create a temporary URL for the blob
+        const url = window.URL.createObjectURL(blob);
+
+        // Create an anchor element and trigger a download
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName; // Set the file name
+        document.body.appendChild(a); // Append the anchor to the document
+        a.click(); // Trigger a click to download the file
+        setIsDownloaded(true);
+        // Clean up
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url); // Release the memory used for the Blob URL
+      })
+      .catch((error) => {
+        console.error("Error downloading the PDF:", error);
+        setIsDownloaded(false);
+      });
+  };
   const words = [
     {
       text: "Frontend",
-      className:
-        "text-red-500 font-extrabold dark:text-blue-500 md:text-[60px]",
+      className: "text-red-500 font-extrabold dark:text-blue-500 md:text-6xl",
     },
     {
       text: "Developer",
-      className: "text-white font-extrabold dark:text-blue-500 md:text-[60px]",
+      className: "text-white font-extrabold dark:text-blue-500 md:text-6xl",
     },
   ];
   return (
     <>
-      <div className="flex justify-center items-center h-screen w-full z-50">
+      <div className="flex justify-center items-center w-full z-50 mt-20 ">
         <div className="text-white w-[80%] flex">
+          {/* sir jasai aapnai kaha tha custom kam sai kam use kare to width kasai du ? */}
           <div className="flex flex-col gap-5">
             <div className="flex gap-1 ">
               <img src="/hi.png" alt="" />
-              <h1 className="my-auto font-bold text-[24px]">HI I’ M</h1>
+              <h1 className="my-auto font-bold  text-2xl">HI I’ M</h1>
             </div>
-            <div className="text-[60px] font-extrabold">
+            <div className="text-6xl font-extrabold">
               <h1 className="leading-none">Vishwas</h1>
               <TypewriterEffectSmooth words={words} />
             </div>
             <div className="">
-              <p className="text-[16px] font-normal text-[#C4CFDE] w-2/3">
+              <p className="text-base font-normal text-[#C4CFDE] w-2/3">
                 Frontend development involves building responsive and
                 interactive web applications, ensuring a seamless user
                 experience across various devices
@@ -40,9 +69,12 @@ function Introduction() {
               <AnimatedSubscribeButton
                 buttonColor="#D21C23"
                 buttonTextColor="#ffffff"
-                subscribeStatus={false}
+                subscribeStatus={isDownloaded}
                 initialText={
-                  <span className="group inline-flex gap-2 items-center">
+                  <span
+                    className="group inline-flex gap-2 items-center"
+                    onClick={downloadPDF}
+                  >
                     DOWNLOAD CV{" "}
                     <FaDownload className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>

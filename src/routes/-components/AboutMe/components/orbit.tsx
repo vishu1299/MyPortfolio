@@ -4,7 +4,7 @@ import OrbitingCircles from "../../../../components/magicui/orbiting-circles";
 OrbitingCircles;
 export function OrbitingCirclesDemo() {
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
+    <div className="relative h-[500px] flex w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-700 to-gray-300 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-black bg-[#212428]">
         About Me
       </span>
