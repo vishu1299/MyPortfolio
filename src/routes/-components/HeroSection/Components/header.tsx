@@ -5,22 +5,22 @@ import ShimmerButton from "../../../../components/magicui/shimmer-button";
 function Header() {
   return (
     <>
-      <div className="flex justify-center z-50 pt-5">
-        <div className="flex justify-between w-[80%]">
-          <div className="logo my-auto">
-            <img src="/Logo.png" alt="logo" />
+      <div className="sm:flex justify-center z-50 xl:pt-5 pt-2 lg:p-3 hidden ">
+        <div className="flex justify-between gap-10 w-[75%] xl:w-[80%] ">
+          <div className="logo my-auto ">
+            <img className="h-5 lg:h-7 xl:h-full " src="/Logo.png" alt="logo" />
           </div>
-          <div className="menu text-white font-bold text-sm flex gap-9  rounded-3xl my-auto mr-1">
+          <div className="menu text-white font-bold text-[8px] lg:text-[10px] xl:text-sm flex xl:gap-9 gap-3 md:gap-4 lg:gap-6 my-auto xl:mr-1 lg:mr-4">
             <a href="#">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#">RESUME</a>
             <a href="#">PORTFOLIO</a>
-            <a href="#">MY WORK</a>
+            <a href="#">WORK</a>
             <a href="#">CONTACT</a>
           </div>
-          <div className="mr-12 mt-2">
+          <div className="mr-1 xl:mr-12 mt-2">
             <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white  lg:text-lg">
+              <span className="whitespace-pre-wrap text-center text-xs lg:text-sm font-medium leading-none tracking-tight text-white dark:from-white  xl:text-xl">
                 Let's Talk
               </span>
             </ShimmerButton>

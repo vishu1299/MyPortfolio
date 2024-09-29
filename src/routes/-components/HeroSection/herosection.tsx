@@ -1,16 +1,23 @@
 import Header from "./Components/header";
 import Introduction from "./Components/introduction";
+import Mobile_header from "./Components/mobile_header";
 
 function Herosection() {
   return (
     <>
       <div className="flex flex-col justify-center items-center shrink-0 ">
-        <div className="w-full relative">
+        <div className="w-[97%] sm:w-full relative">
           <img
-            className="absolute -z-10 size-full h-auto"
-            src="/bg-1.png"
+            className="hidden sm:flex absolute -z-10 size-full h-auto pt-2"
+            src="/try2.png"
             alt=""
           />
+          <img
+            className="sm:hidden flex absolute -z-10 size-full pt-2"
+            src="/mobile-bg.png"
+            alt=""
+          />
+          <Mobile_header />
           <Header />
           <Introduction />
         </div>

@@ -37,59 +37,73 @@ function Introduction() {
   const words = [
     {
       text: "Frontend",
-      className: "text-red-500 font-extrabold dark:text-blue-500 md:text-6xl",
+      className:
+        "text-red-500 font-extrabold dark:text-blue-500 text-2xl lg:text-4xl xl:text-6xl",
     },
     {
       text: "Developer",
-      className: "text-white font-extrabold dark:text-blue-500 md:text-6xl",
+      className:
+        "text-white font-extrabold dark:text-blue-500 text-2xl lg:text-4xl xl:text-6xl",
     },
   ];
   return (
     <>
-      <div className="flex justify-center items-center w-full z-50 mt-20 ">
-        <div className="text-white w-[80%] flex">
+      <div className="flex justify-center items-center w-full z-50 mt-12 xl:mt-20 ">
+        <div className="text-white w-[90%] sm:w-[75%] xl:w-[80%] flex flex-col sm:flex-row gap-y-16">
           {/* sir jasai aapnai kaha tha custom kam sai kam use kare to width kasai du ? */}
-          <div className="flex flex-col gap-5">
-            <div className="flex gap-1 ">
-              <img src="/hi.png" alt="" />
-              <h1 className="my-auto font-bold  text-2xl">HI I’ M</h1>
+          <div className="flex flex-col gap-5 sm:w-[55%] xl:w-[60%]">
+            <div className="flex gap-2 ">
+              <img
+                src="/hi.png"
+                className="h-5 sm:h-6 lg:h-7 xl:h-full"
+                alt=""
+              />
+              <h1 className=" font-bold text-xs lg:text-base xl:text-2xl my-auto">
+                HI I’ M
+              </h1>
             </div>
-            <div className="text-6xl font-extrabold">
+            <div className="text-2xl lg:text-4xl xl:text-6xl font-extrabold">
               <h1 className="leading-none">Vishwas</h1>
               <TypewriterEffectSmooth words={words} />
-            </div>
-            <div className="">
-              <p className="text-base font-normal text-[#C4CFDE] w-2/3">
+              <p className="lg:hidden text-xs xl:text-base font-normal text-[#C4CFDE] ">
                 Frontend development involves building responsive and
-                interactive web applications, ensuring a seamless user
-                experience across various devices
+                interactive web applications.
+              </p>
+              <p className="hidden lg:flex text-xs xl:text-base font-normal text-[#C4CFDE] ">
+                Frontend development involves building responsive and
+                interactive web applications ensuring a seamless user experience
+                across various devices
               </p>
             </div>
-            <div className="mt-3">
+            <div className="mt-1 xl:mt-3">
               <AnimatedSubscribeButton
                 buttonColor="#D21C23"
                 buttonTextColor="#ffffff"
                 subscribeStatus={isDownloaded}
                 initialText={
                   <span
-                    className="group inline-flex gap-2 items-center"
+                    className="group inline-flex gap-2 items-center text-[10px] lg:text-xs xl:text-lg my-auto"
                     onClick={downloadPDF}
                   >
                     DOWNLOAD CV{" "}
-                    <FaDownload className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    <FaDownload className="ml-1 xl:h-4 xl:w-4 h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 }
                 changeText={
-                  <span className="group inline-flex items-center">
-                    <CheckIcon className="mr-2 h-4 w-4" />
+                  <span className="group inline-flex items-center text-[10px] lg:text-xs xl:text-lg">
+                    <CheckIcon className="mr-2 xl:h-4 xl:w-4 h-3 w-3" />
                     DOWNLODED{" "}
                   </span>
                 }
               />
             </div>
           </div>
-          <div className="">
-            <img src="/profile.png" alt="" />
+          <div className="my-auto  sm:w-[40%] ">
+            <img
+              className="h-48 lg:h-60 xl:h-96 mx-auto mb-12"
+              src="/profile.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
