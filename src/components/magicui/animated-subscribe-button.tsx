@@ -55,7 +55,7 @@ export const AnimatedSubscribeButton: React.FC<
         >
           <motion.span
             key="reaction"
-            className="relative block font-semibold"
+            className="relative  font-semibold flex p-1 xl:p-0"
             initial={{ x: 0 }}
             exit={{ x: 50, transition: { duration: 0.1 } }}
           >

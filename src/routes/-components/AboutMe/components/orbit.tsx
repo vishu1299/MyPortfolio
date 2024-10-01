@@ -4,74 +4,144 @@ import OrbitingCircles from "../../../../components/magicui/orbiting-circles";
 OrbitingCircles;
 export function OrbitingCirclesDemo() {
   return (
-    <div className="relative h-[500px] flex w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-700 to-gray-300 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-black bg-[#212428]">
-        About Me
-      </span>
+    <>
+      <div className="relative h-[350px] flex xl:hidden w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-700 to-gray-300 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-black bg-[#212428]">
+          About Me
+        </span>
 
-      {/* Inner Circles */}
-      <OrbitingCircles
-        className="size-[40px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={70}
-      >
-        <Icons.html />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[40px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={70}
-      >
-        <Icons.tailwind />
-      </OrbitingCircles>
+        {/* Inner Circles */}
+        <OrbitingCircles
+          className="size-[30px] border-none bg-transparent"
+          duration={20}
+          delay={20}
+          radius={45}
+        >
+          <Icons.html />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[30px] border-none bg-transparent"
+          duration={20}
+          delay={10}
+          radius={45}
+        >
+          <Icons.tailwind />
+        </OrbitingCircles>
 
-      {/* 2nd layer  */}
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        duration={20}
-        delay={20}
-        radius={140}
-        reverse
-      >
-        <Icons.git />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        duration={20}
-        delay={10}
-        radius={140}
-        reverse
-      >
-        <Icons.javacript />
-      </OrbitingCircles>
+        {/* 2nd layer  */}
+        <OrbitingCircles
+          className="size-[40px] border-none bg-transparent"
+          duration={20}
+          delay={20}
+          radius={90}
+          reverse
+        >
+          <Icons.git />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[40px] border-none bg-transparent"
+          duration={20}
+          delay={10}
+          radius={90}
+          reverse
+        >
+          <Icons.javacript />
+        </OrbitingCircles>
 
-      {/* Outer Circles (reverse) */}
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={210}
-        duration={20}
-      >
-        <Icons.React />
-      </OrbitingCircles>
-      <OrbitingCircles
-        className="size-[50px] border-none bg-transparent"
-        radius={210}
-        duration={20}
-        delay={20}
-      >
-        <Icons.next />
-      </OrbitingCircles>
-      {/* <OrbitingCircles
+        {/* Outer Circles (reverse) */}
+        <OrbitingCircles
+          className="size-[45px] border-none bg-transparent"
+          radius={135}
+          duration={20}
+        >
+          <Icons.React />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[45px] border-none bg-transparent"
+          radius={135}
+          duration={20}
+          delay={20}
+        >
+          <Icons.next />
+        </OrbitingCircles>
+        {/* <OrbitingCircles
         className="size-[50px] border-none bg-transparent"
         radius={210}
         duration={30}
         delay={50}
-      >
+        >
         <Icons.javacript />
-      </OrbitingCircles> */}
-    </div>
+        </OrbitingCircles> */}
+      </div>
+      <div className="relative h-[500px]  hidden xl:flex w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
+        <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-gray-700 to-gray-300 bg-clip-text text-center text-6xl font-semibold leading-none text-transparent dark:from-white dark:to-black bg-[#212428]">
+          About Me
+        </span>
+
+        {/* Inner Circles */}
+        <OrbitingCircles
+          className="size-[40px] border-none bg-transparent"
+          duration={20}
+          delay={20}
+          radius={70}
+        >
+          <Icons.html />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[40px] border-none bg-transparent"
+          duration={20}
+          delay={10}
+          radius={70}
+        >
+          <Icons.tailwind />
+        </OrbitingCircles>
+
+        {/* 2nd layer  */}
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          duration={20}
+          delay={20}
+          radius={140}
+          reverse
+        >
+          <Icons.git />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          duration={20}
+          delay={10}
+          radius={140}
+          reverse
+        >
+          <Icons.javacript />
+        </OrbitingCircles>
+
+        {/* Outer Circles (reverse) */}
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          radius={210}
+          duration={20}
+        >
+          <Icons.React />
+        </OrbitingCircles>
+        <OrbitingCircles
+          className="size-[50px] border-none bg-transparent"
+          radius={210}
+          duration={20}
+          delay={20}
+        >
+          <Icons.next />
+        </OrbitingCircles>
+        {/* <OrbitingCircles
+        className="size-[50px] border-none bg-transparent"
+        radius={210}
+        duration={30}
+        delay={50}
+        >
+        <Icons.javacript />
+        </OrbitingCircles> */}
+      </div>
+    </>
   );
 }
 
