@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   component: () => (
     <>
       <div className=" flex justify-center items-center ">
-        <div className="w-[98%] max-w-[1536px]">
+        <div className="w-[98%] max-w-[1536px] ">
           <Herosection />
           <Aboutme />
         </div>

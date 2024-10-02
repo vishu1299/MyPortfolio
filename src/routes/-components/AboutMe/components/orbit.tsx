@@ -30,7 +30,7 @@ export function OrbitingCirclesDemo() {
 
         {/* 2nd layer  */}
         <OrbitingCircles
-          className="size-[40px] border-none bg-transparent"
+          className="size-[35px] border-none bg-transparent"
           duration={20}
           delay={20}
           radius={90}
@@ -39,7 +39,7 @@ export function OrbitingCirclesDemo() {
           <Icons.git />
         </OrbitingCircles>
         <OrbitingCircles
-          className="size-[40px] border-none bg-transparent"
+          className="size-[35px] border-none bg-transparent"
           duration={20}
           delay={10}
           radius={90}
@@ -50,14 +50,14 @@ export function OrbitingCirclesDemo() {
 
         {/* Outer Circles (reverse) */}
         <OrbitingCircles
-          className="size-[45px] border-none bg-transparent"
+          className="size-[40px] border-none bg-transparent"
           radius={135}
           duration={20}
         >
           <Icons.React />
         </OrbitingCircles>
         <OrbitingCircles
-          className="size-[45px] border-none bg-transparent"
+          className="size-[40px] border-none bg-transparent"
           radius={135}
           duration={20}
           delay={20}

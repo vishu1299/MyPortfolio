@@ -9,7 +9,8 @@ function Herosection() {
         <div className="w-[97%] sm:w-full relative">
           <img
             className="hidden sm:flex absolute -z-10 size-full h-auto pt-2"
-            src="/try2.png"
+            src="/design4.png"
+            // src="/design1.png"
             alt=""
           />
           <img
