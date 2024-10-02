@@ -3,8 +3,7 @@ import { CheckIcon } from "lucide-react";
 import { FaDownload } from "react-icons/fa6";
 import { TypewriterEffectSmooth } from "../../../../components/ui/typewriter-effect";
 import { useState } from "react";
-import { MaskContainer } from "../../../../components/ui/svg-mask-effect";
-// import { MaskContainer } from "../../../../components/ui/svg-mask-effect";
+
 
 function Introduction() {
   const [isDownloaded, setIsDownloaded] = useState(false);
