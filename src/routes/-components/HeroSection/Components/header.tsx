@@ -12,22 +12,58 @@ function Header() {
 
           {/* Use Link from react-scroll for smooth scrolling */}
           <div className="menu text-white font-bold text-[8px] lg:text-[10px] xl:text-sm flex xl:gap-7 gap-3 md:gap-4 lg:gap-6 my-auto lg:mr-4 xl:mr-12">
-            <Link to="home" smooth={true} duration={500} offset={-70}>
+            <Link
+              to="home"
+              className="cursor-pointer"
+              smooth={true}
+              duration={500}
+              offset={-70}
+            >
               HOME
             </Link>
-            <Link to="about" smooth={true} duration={500} offset={-100}>
+            <Link
+              to="about"
+              className="cursor-pointer"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
               ABOUT
             </Link>
-            <Link to="skills" smooth={true} duration={500} offset={-100}>
+            <Link
+              to="skills"
+              className="cursor-pointer"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
               SKILLS
             </Link>
-            <Link to="portfolio" smooth={true} duration={500} offset={-100}>
+            <Link
+              to="portfolio"
+              className="cursor-pointer"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
               PORTFOLIO
             </Link>
-            <Link to="work" smooth={true} duration={500} offset={-100}>
+            <Link
+              to="work"
+              className="cursor-pointer"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
               WORK
             </Link>
-            <Link to="contact" smooth={true} duration={500} offset={-100}>
+            <Link
+              to="contact"
+              className="cursor-pointer"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
               CONTACT
             </Link>
           </div>
