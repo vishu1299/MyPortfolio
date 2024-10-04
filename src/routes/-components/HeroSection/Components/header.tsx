@@ -17,7 +17,7 @@ function Header() {
               className="cursor-pointer"
               smooth={true}
               duration={500}
-              offset={-70}
+              offset={-100}
             >
               HOME
             </Link>
