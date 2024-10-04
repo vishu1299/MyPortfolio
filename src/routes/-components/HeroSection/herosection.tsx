@@ -1,6 +1,6 @@
 import Header from "./Components/header";
 import Introduction from "./Components/introduction";
-import Mobile_header from "./Components/mobile_header";
+// import Mobile_header from "./Components/mobile_header";
 
 function Herosection() {
   return (
