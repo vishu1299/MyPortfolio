@@ -1,6 +1,5 @@
-// import { Link } from "@tanstack/react-router";
-
 import ShimmerButton from "../../../../components/magicui/shimmer-button";
+import { Link } from "react-scroll"; // Import the Link component
 
 function Header() {
   return (
@@ -10,17 +9,32 @@ function Header() {
           <div className="logo my-auto ">
             <img className="h-5 lg:h-7 xl:h-full " src="/Logo.png" alt="logo" />
           </div>
-          <div className="menu text-white font-bold text-[8px] lg:text-[10px] xl:text-sm flex xl:gap-7 gap-3 md:gap-4 lg:gap-6 my-auto  lg:mr-4 xl:mr-12">
-            <a href="#">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#">RESUME</a>
-            <a href="#">PORTFOLIO</a>
-            <a href="#">WORK</a>
-            <a href="#">CONTACT</a>
+
+          {/* Use Link from react-scroll for smooth scrolling */}
+          <div className="menu text-white font-bold text-[8px] lg:text-[10px] xl:text-sm flex xl:gap-7 gap-3 md:gap-4 lg:gap-6 my-auto lg:mr-4 xl:mr-12">
+            <Link to="home" smooth={true} duration={500} offset={-70}>
+              HOME
+            </Link>
+            <Link to="about" smooth={true} duration={500} offset={-100}>
+              ABOUT
+            </Link>
+            <Link to="skills" smooth={true} duration={500} offset={-100}>
+              SKILLS
+            </Link>
+            <Link to="portfolio" smooth={true} duration={500} offset={-100}>
+              PORTFOLIO
+            </Link>
+            <Link to="work" smooth={true} duration={500} offset={-100}>
+              WORK
+            </Link>
+            <Link to="contact" smooth={true} duration={500} offset={-100}>
+              CONTACT
+            </Link>
           </div>
-          <div className=" mt-2">
+
+          <div className="mt-2">
             <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-xs lg:text-sm font-medium leading-none tracking-tight text-white dark:from-white  xl:text-xl">
+              <span className="whitespace-pre-wrap text-center text-xs lg:text-sm font-medium leading-none tracking-tight text-white dark:from-white xl:text-xl">
                 Let's Talk
               </span>
             </ShimmerButton>

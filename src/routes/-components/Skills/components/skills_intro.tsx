@@ -20,7 +20,7 @@ function Skills_intro() {
             <h1>Transforming Ideas into Functional Web Designs</h1>
           </div>
 
-          <div className="flex xl:hidden">
+          <div className="flex sm:hidden lg:flex xl:hidden">
             <p className="text-xs xl:text-sm font-normal text-[#C4CFDE] xl:w-[85%]">
               I transform design visions into seamless, interactive web
               experiences.
@@ -38,7 +38,7 @@ function Skills_intro() {
             type="submit"
             className="theme-btn max-w-fit mt-3 p-2 text-[10px] font-bold xl:p-3 xl:text-sm"
           >
-            <div className="flex gap-1 hover:gap-3">
+            <div className="flex gap-1">
               HIRE ME
               <FaChevronRight className="my-auto" />
             </div>

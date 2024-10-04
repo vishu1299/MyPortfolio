@@ -12,6 +12,7 @@ export const Route = createFileRoute("/")({
           <Herosection />
           <Aboutme />
           <Skills />
+          <Aboutme />
         </div>
         <div className="fixed lg:bottom-2 2xl:bottom-12 right-5 hidden sm:flex">
           <div className="w-24 h-24 lg:w-32 lg:h-32 ">
