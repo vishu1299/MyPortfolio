@@ -5,7 +5,10 @@ import Mobile_header from "./Components/mobile_header";
 function Herosection() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center shrink-0 ">
+      <div
+        id="home"
+        className="flex flex-col justify-center items-center shrink-0 "
+      >
         <div className="w-[97%] sm:w-full relative">
           <img
             className="hidden sm:flex absolute -z-10 size-full h-auto pt-2"

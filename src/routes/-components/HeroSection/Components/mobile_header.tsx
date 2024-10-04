@@ -8,15 +8,15 @@ import { Link } from "react-scroll"; // Import Link from react-scroll
 import "../../../../style.css";
 
 function Mobile_header() {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#home");
   return (
     <nav>
       <Link
-        to="home" // Replace with the actual ID of the home section
+        to="home"
         onClick={() => {
-          setActiveNav("#");
+          setActiveNav("#home");
         }}
-        className={activeNav === "#" ? "active" : ""}
+        className={activeNav === "#home" ? "active" : ""}
         smooth={true}
         duration={500}
         offset={-100} // Set the offset to -100
