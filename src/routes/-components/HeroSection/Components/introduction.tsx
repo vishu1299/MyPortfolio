@@ -4,7 +4,6 @@ import { FaDownload } from "react-icons/fa6";
 import { TypewriterEffectSmooth } from "../../../../components/ui/typewriter-effect";
 import { useState } from "react";
 
-
 function Introduction() {
   const [isDownloaded, setIsDownloaded] = useState(false);
   const downloadPDF = () => {
@@ -38,7 +37,7 @@ function Introduction() {
     {
       text: "Frontend",
       className:
-        "text-red-500 font-extrabold dark:text-blue-500 text-2xl lg:text-4xl xl:text-6xl",
+        "text-red-500 font-extrabold dark:text-blue-500 text-2xl lg:text-4xl xl:text-6xl ",
     },
     {
       text: "Developer",
@@ -63,7 +62,7 @@ function Introduction() {
               </h1>
             </div>
             <div className="text-2xl lg:text-4xl xl:text-6xl font-extrabold">
-              <h1 className="leading-none">Vishwas</h1>
+              <h1 className="leading-none ">Vishwas</h1>
               <TypewriterEffectSmooth words={words} />
               <p className="lg:hidden pt-2 md:pt-0 text-[11px] leading-4 sm:w-[95%] xl:text-base font-normal text-[#C4CFDE] ">
                 Frontend development involves building responsive and

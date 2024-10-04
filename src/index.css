@@ -97,7 +97,29 @@ body {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+:-webkit-scrollbar-thumb:hover {
   background: #d21c23;
 }
 
+.skills::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  display: flex;
+}
+
+/* Track */
+.skills::-webkit-scrollbar-track {
+  background: gray;
+  border-radius: 5px; /* Add border radius to the track */
+}
+
+/* Handle */
+.skills::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 5px; /* Add border radius to the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #212428;
+}

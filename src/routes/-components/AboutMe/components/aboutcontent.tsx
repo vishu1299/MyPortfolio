@@ -66,7 +66,10 @@ function AboutContent() {
               </div>
             ))}
           </div>
-          <button type="submit" className="theme-btn max-w-fit mt-3">
+          <button
+            type="submit"
+            className="theme-btn max-w-fit mt-3 p-2 text-[10px] font-bold xl:p-3 xl:text-sm"
+          >
             <div className="flex gap-1 hover:gap-3">
               HIRE ME
               <FaChevronRight />

@@ -9,7 +9,7 @@ function Herosection() {
         <div className="w-[97%] sm:w-full relative">
           <img
             className="hidden sm:flex absolute -z-10 size-full h-auto pt-2"
-            src="/design4.png"
+            src="/dark-bg2.png"
             // src="/design1.png"
             alt=""
           />
@@ -18,7 +18,7 @@ function Herosection() {
             src="/mobile-bg.png"
             alt=""
           />
-          <Mobile_header />
+          {/* <Mobile_header /> */}
           <Header />
           <Introduction />
         </div>
