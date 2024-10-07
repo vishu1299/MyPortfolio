@@ -123,3 +123,29 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #212428;
 }
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 765px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .hide_sec {
+    display: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s forwards;
+}

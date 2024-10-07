@@ -37,12 +37,12 @@ function Introduction() {
     {
       text: "Frontend",
       className:
-        "text-red-500 font-extrabold dark:text-blue-500 text-2xl lg:text-4xl xl:text-6xl ",
+        "text-red-500 font-extrabold dark:text-blue-500 heading text-2xl lg:text-4xl xl:text-6xl ",
     },
     {
       text: "Developer",
       className:
-        "text-white font-extrabold dark:text-blue-500 text-2xl lg:text-4xl xl:text-6xl",
+        "text-white font-extrabold dark:text-blue-500 heading text-2xl lg:text-4xl xl:text-6xl",
     },
   ];
   return (
@@ -62,7 +62,7 @@ function Introduction() {
               </h1>
             </div>
             <div className="text-2xl lg:text-4xl xl:text-6xl font-extrabold">
-              <h1 className="leading-none ">Vishwas</h1>
+              <h1 className="leading-none heading">Vishwas</h1>
               <TypewriterEffectSmooth words={words} />
               <p className="lg:hidden pt-2 md:pt-0 text-[11px] leading-4 sm:w-[95%] xl:text-base font-normal text-[#C4CFDE] ">
                 Frontend development involves building responsive and

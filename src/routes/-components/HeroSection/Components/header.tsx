@@ -70,7 +70,7 @@ function Header() {
 
           <div className="mt-2">
             <ShimmerButton className="shadow-2xl">
-              <span className="whitespace-pre-wrap text-center text-xs lg:text-sm font-medium leading-none tracking-tight text-white dark:from-white xl:text-xl">
+              <span className=" text-center text-xs lg:text-sm font-medium leading-none tracking-tight text-white dark:from-white xl:text-xl button_heading">
                 Let's Talk
               </span>
             </ShimmerButton>
