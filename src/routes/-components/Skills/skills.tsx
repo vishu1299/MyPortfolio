@@ -1,6 +1,7 @@
 import Skills_intro from "./components/skills_intro";
 import "../../../style.css";
-import My_skills from "./components/my_skills";
+// import My_skills from "./components/my_skills";
+import Skills_slider from "./components/skills_slider";
 
 function Skills() {
   return (
@@ -15,9 +16,10 @@ function Skills() {
             src="/Skills1.png"
             alt=""
           />
-          <div className=" mx-auto flex flex-col sm:flex-row justify-center items-center h-[22rem] sm:h-[16rem] lg:h-[20rem] xl:h-[30rem] lg:gap-0 sm:gap-x-5 xl:gap-x-5">
+          <div className=" mx-auto w-[90%] gap-8 sm:w-[60%] grid grid-cols-1 sm:grid-cols-3 justify-center items-center h-[22rem] sm:h-[16rem] lg:h-[20rem] xl:h-[30rem] lg:gap-0 sm:gap-x-5 xl:gap-x-5">
             <Skills_intro />
-            <My_skills />
+            {/* <My_skills /> */}
+            <Skills_slider />
           </div>
         </div>
       </div>

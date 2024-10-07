@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa6";
 function Skills_intro() {
   return (
     <>
-      <div className="text-white  md:w-[35%] w-[90%] ">
+      <div className="text-white w-[90%] col-span-2">
         <div className="flex flex-col gap-1 lg:gap-2 xl:gap-5">
           <div className="flex gap-3">
             <img
