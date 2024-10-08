@@ -121,11 +121,11 @@ function All_skills() {
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-[#212428] to-[#424549]  flex flex-col items-center justify-center p-6 text-white">
-        <h2 className="text-lg uppercase tracking-wide">
+        <h2 className="md:text-lg uppercase text-center tracking-wide">
           My Specializations Services
         </h2>
-        <h1 className="text-4xl font-bold mt-2">What I Do</h1>
-        <p className="text-center text-lg mt-4 max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mt-2">What I Do</h1>
+        <p className="text-center text-sm md:text-lg mt-4 max-w-3xl">
           Develop comprehensive content strategies tailored to your unique goals
           and target audience, ensuring that every piece of content.
         </p>
