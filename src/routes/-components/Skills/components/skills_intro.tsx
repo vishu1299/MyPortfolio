@@ -41,7 +41,7 @@ function Skills_intro() {
               className="theme-btn max-w-fit mt-3 p-2 text-[10px] font-bold xl:p-3 xl:text-sm"
             >
               <div className="flex gap-1">
-                EXPLORE More
+                EXPLORE MORE
                 <FaChevronRight className="my-auto" />
               </div>
             </button>
