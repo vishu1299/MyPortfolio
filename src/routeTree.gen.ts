@@ -12,7 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as IndexImport } from './routes/index'
-import { Route as SkillspageIndexImport } from './routes/skills_page/index'
+import { Route as SkillsPageIndexImport } from './routes/skills-page/index'
 
 // Create/Update Routes
 
@@ -21,8 +21,8 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const SkillspageIndexRoute = SkillspageIndexImport.update({
-  path: '/skills_page/',
+const SkillsPageIndexRoute = SkillsPageIndexImport.update({
+  path: '/skills-page/',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -37,11 +37,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/skills_page/': {
-      id: '/skills_page/'
-      path: '/skills_page'
-      fullPath: '/skills_page'
-      preLoaderRoute: typeof SkillspageIndexImport
+    '/skills-page/': {
+      id: '/skills-page/'
+      path: '/skills-page'
+      fullPath: '/skills-page'
+      preLoaderRoute: typeof SkillsPageIndexImport
       parentRoute: typeof rootRoute
     }
   }
@@ -51,37 +51,37 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/skills_page': typeof SkillspageIndexRoute
+  '/skills-page': typeof SkillsPageIndexRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/skills_page': typeof SkillspageIndexRoute
+  '/skills-page': typeof SkillsPageIndexRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/skills_page/': typeof SkillspageIndexRoute
+  '/skills-page/': typeof SkillsPageIndexRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/skills_page'
+  fullPaths: '/' | '/skills-page'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/skills_page'
-  id: '__root__' | '/' | '/skills_page/'
+  to: '/' | '/skills-page'
+  id: '__root__' | '/' | '/skills-page/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  SkillspageIndexRoute: typeof SkillspageIndexRoute
+  SkillsPageIndexRoute: typeof SkillsPageIndexRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  SkillspageIndexRoute: SkillspageIndexRoute,
+  SkillsPageIndexRoute: SkillsPageIndexRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,14 +97,14 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/skills_page/"
+        "/skills-page/"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/skills_page/": {
-      "filePath": "skills_page/index.tsx"
+    "/skills-page/": {
+      "filePath": "skills-page/index.tsx"
     }
   }
 }
