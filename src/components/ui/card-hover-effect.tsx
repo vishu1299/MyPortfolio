@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
@@ -11,7 +10,6 @@ export const HoverEffect = ({
     icon: string;
     title: string;
     description: string;
-    link: string;
   }[];
   className?: string;
 }) => {
@@ -25,9 +23,7 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          to={item?.link}
-          key={item?.link}
+        <div
           className="relative group block p-4 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -55,7 +51,7 @@ export const HoverEffect = ({
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );
