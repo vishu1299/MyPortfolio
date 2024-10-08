@@ -35,7 +35,7 @@ function Skills_intro() {
               devices.
             </p>
           </div>
-          <Link to="/skills_page">
+          <Link to="/skills-page">
             <button
               type="submit"
               className="theme-btn max-w-fit mt-3 p-2 text-[10px] font-bold xl:p-3 xl:text-sm"
