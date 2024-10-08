@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import "../../../../style.css";
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -34,15 +35,17 @@ function Skills_intro() {
               devices.
             </p>
           </div>
-          <button
-            type="submit"
-            className="theme-btn max-w-fit mt-3 p-2 text-[10px] font-bold xl:p-3 xl:text-sm"
-          >
-            <div className="flex gap-1">
-              HIRE ME
-              <FaChevronRight className="my-auto" />
-            </div>
-          </button>
+          <Link to="/skills_page">
+            <button
+              type="submit"
+              className="theme-btn max-w-fit mt-3 p-2 text-[10px] font-bold xl:p-3 xl:text-sm"
+            >
+              <div className="flex gap-1">
+                EXPLORE More
+                <FaChevronRight className="my-auto" />
+              </div>
+            </button>
+          </Link>
         </div>
       </div>
     </>
