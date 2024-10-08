@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import All_skills from './-components/all_skills'
+import All_skills from './-components/all-skills'
 
 export const Route = createFileRoute('/skills-page/')({
   component: () => (
