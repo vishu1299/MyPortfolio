@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import Aboutme from "./-components/AboutMe/aboutme";
 import Herosection from "./-components/HeroSection/herosection";
 import Skills from "./-components/Skills/skills";
-
+import { Portfolio } from "./-components/Portfolio/portfolio";
 export const Route = createFileRoute("/")({
   component: () => (
     <>
@@ -12,6 +12,7 @@ export const Route = createFileRoute("/")({
           <Herosection />
           <Aboutme />
           <Skills />
+          <Portfolio />
         </div>
         <div className="fixed lg:bottom-2 2xl:bottom-12 right-5 hidden sm:flex">
           <div className="w-24 h-24 lg:w-32 lg:h-32 ">

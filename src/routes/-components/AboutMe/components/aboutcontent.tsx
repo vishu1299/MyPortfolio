@@ -85,7 +85,7 @@ function AboutContent() {
                 >
                   <FiCheckCircle className="h-8 xl:h-10 text-[#D21C23]" />
                   <div>
-                    <h1 className="text-[#C4CFDE] text-sm xl:text-base">
+                    <h1 className="text-[#C4CFDE] text-sm md:text-xs xl:text-base">
                       {item.label}
                     </h1>
                   </div>

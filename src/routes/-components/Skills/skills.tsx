@@ -8,7 +8,7 @@ function Skills() {
     <>
       <div
         id="skills"
-        className="flex flex-col justify-center h-full items-center shrink-0 mt-10 md:mt-40 lg:mt-52 xl:mt-48 responsive-div"
+        className="flex flex-col justify-center h-full items-center shrink-0 mt-10 md:mt-24 lg:mt-24 xl:mt-40 responsive-div"
       >
         <div className="w-[97%] h-full sm:w-full relative ">
           <img
@@ -16,7 +16,7 @@ function Skills() {
             src="/Skills1.png"
             alt=""
           />
-          <div className=" mx-auto w-[90%] gap-8 sm:w-[60%] grid grid-cols-1 sm:grid-cols-3 justify-center items-center h-[22rem] sm:h-[16rem] lg:h-[20rem] xl:h-[30rem] lg:gap-0 sm:gap-x-5 xl:gap-x-5">
+          <div className=" mx-auto w-[90%] gap-8 sm:w-[60%] grid grid-cols-1 sm:grid-cols-3 justify-center items-center h-[22rem] sm:h-[16rem] lg:h-[20rem] xl:h-[30rem] lg:gap-0 sm:gap-x-5 xl:gap-x-5 ">
             <Skills_intro />
             {/* <My_skills /> */}
             <Skills_slider />

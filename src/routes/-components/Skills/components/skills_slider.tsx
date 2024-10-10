@@ -21,7 +21,7 @@ function Skills_slider() {
           delay: 3000,
           disableOnInteraction: true,
         }}
-        className="flex justify-end"
+        className="flex justify-end w-[200px] h-[280px] sm:w-[140px] sm:h-[180px] lg:w-[180px] lg:h-[235px] xl:w-[230px] xl:h-[320px]"
       >
         {/** Array of skills with text */}
         {[
@@ -62,28 +62,28 @@ function Skills_slider() {
               style={{ objectFit: "cover" }} // Inline style for better control
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-60 rounded-lg p-4">
-              <h3 className="text-white text-2xl font-bold mb-1 transform transition-transform duration-300 hover:translate-y-1">
+              <h3 className="text-white text-xs lg:text-lg xl:text-2xl font-bold mb-1 transform transition-transform duration-300 hover:translate-y-1">
                 {skill.title}
               </h3>
-              <p className="text-white text-base text-center mb-2">
+              <p className="text-white text-[10px] lg:text-sm xl:text-base text-center mb-2">
                 {skill.description}
               </p>
 
               {/** Progress Bar with Animation */}
               <div className="w-full bg-gray-300 rounded-full mb-2">
                 <div
-                  className="bg-blue-500 h-2 rounded-full transition-all duration-1000"
+                  className="bg-red-500 h-1 xl:h-2 rounded-full transition-all duration-1000"
                   style={{ width: `${skill.progress}%` }}
                 ></div>
               </div>
-              <p className="text-white text-sm mb-1">
+              <p className="text-white text-[10px] lg:text-sm mb-1">
                 {skill.progress}% Proficient
               </p>
 
               {/** Interactive Button */}
-              <button className="bg-blue-600 text-white text-sm py-1 px-3 rounded transition-colors duration-300 hover:bg-blue-500">
+              {/* <button className="bg-blue-600 text-white text-sm py-1 px-3 rounded transition-colors duration-300 hover:bg-blue-500">
                 View Projects
-              </button>
+              </button> */}
             </div>
           </SwiperSlide>
         ))}
