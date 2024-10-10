@@ -113,7 +113,7 @@ const projects = [
 function All_skills() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-[#212428] to-[#424549]  flex flex-col items-center justify-center p-6 text-white">
+      <div className="min-h-screen bg-gradient-to-b from-[#212428] to-[#424549]  flex flex-col items-center justify-center text-white p-3">
         <h2 className="text-2xl md:text-4xl font-bold mt-2 uppercase text-center tracking-wide">
           My Specializations Services
         </h2>

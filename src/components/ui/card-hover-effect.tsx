@@ -18,7 +18,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
         className
       )}
     >
@@ -31,7 +31,8 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full  bg-[#2124287d] block  rounded-tl-[6px] rounded-br-[6px] rounded-tr-[40px] rounded-bl-[40px] "
+                // rounded-tl-[6px] rounded-br-[6px] rounded-tr-[50px] rounded-bl-[50px]
+                className="absolute inset-0 h-full w-full  bg-[#2124287d] block rounded-2xl  "
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -66,8 +67,9 @@ export const Card = ({
 }) => {
   return (
     <div
+      // rounded-tl-[4px] rounded-br-[4px] rounded-tr-[50px] rounded-bl-[50px] border-l-4 border-t-4 md:p-4
       className={cn(
-        "h-full w-full overflow-hidden rounded-tl-[4px] rounded-br-[4px] rounded-tr-[60px] rounded-bl-[60px] md:p-4 text-center border-l-4 border-t-4 border-[#797575] group-hover:border-gray-200 relative z-20 bg-[#4b4e5464] transition-colors duration-300 ease-in-out delay-100 shadow-2xl ",
+        "h-full w-full overflow-hidden p-1 md:p-3 text-center rounded-2xl border-[#797575] group-hover:border-gray-200 relative z-20 bg-[#4b4e5464] transition-colors duration-300 ease-in-out delay-100 shadow-2xl ",
         className
       )}
     >
