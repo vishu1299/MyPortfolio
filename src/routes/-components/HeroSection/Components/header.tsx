@@ -44,7 +44,7 @@ function Header() {
               className="cursor-pointer"
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-50}
             >
               PORTFOLIO
             </Link>

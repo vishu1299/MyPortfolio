@@ -17,7 +17,7 @@ function Skills_intro() {
               MY SKILLS
             </h1>
           </div>
-          <div className="text-xl lg:text-2xl xl:text-4xl font-extrabold leading-[1.5] xl:leading-[1.3]">
+          <div className="text-xl lg:text-2xl xl:text-3xl font-extrabold leading-[1.5] xl:leading-[1.3]">
             <h1>Transforming Ideas into Functional Web Designs</h1>
           </div>
 
