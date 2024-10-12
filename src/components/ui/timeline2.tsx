@@ -1,6 +1,6 @@
 "use client";
 import {
-//   useMotionValueEvent,
+  //   useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -70,9 +70,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               className="flex justify-center pt-10 md:pt-40 md:gap-10"
             >
               <div className="relative  w-full">
-                {/* <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                   {item.title}
-                </h3> */}
+                </h3>
                 {item.content}{" "}
               </div>
 
@@ -82,12 +82,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 </div>
               </div>
 
-              <div className="relative  w-full ">
-                {/* <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                  {item.title}
-                </h3> */}
-                {item.content}{" "}
-              </div>
+
             </div>
           ))}
           <div
