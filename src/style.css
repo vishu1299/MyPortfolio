@@ -191,9 +191,7 @@ nav a.active {
 .text-box {
   padding: 20px 30px;
   color: white;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(62, 67, 74, 0.75);
+  background: #3e434a85;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
@@ -248,10 +246,8 @@ nav a.active {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid rgba(62, 67, 74, 0.75);
+  border-right: 15px solid #3e434a85;
   left: -14px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 .left-container-arrow {
   height: 0;
@@ -261,10 +257,8 @@ nav a.active {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid rgba(62, 67, 74, 0.75);
+  border-left: 15px solid #3e434a85;
   right: -14px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 
 @media screen and (max-width: 600px) {
