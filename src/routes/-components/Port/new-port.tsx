@@ -36,7 +36,7 @@ const Newfile = () => {
 
   return (
     <>
-      <div className=" mx-auto py-10 px-4 md:px-8 lg:px-10 text-center flex flex-col gap-3 shrink-0 mt-40 md:mt-20 lg:mt-24 xl:mt-36 responsive-div">
+      <div className=" mx-auto pt-10 px-4 md:px-8 lg:px-10 text-center flex flex-col gap-3 shrink-0 mt-40 md:mt-20 lg:mt-24 xl:mt-36 responsive-div">
         <div className="flex gap-3 justify-center items-center">
           <img
             className="w-[1rem] my-auto"
@@ -73,11 +73,17 @@ const Newfile = () => {
               transition={{ duration: 1, delay: index * 0.2 }}
               className="containers left-container"
             >
-              <img src="/hi.png" alt="" />
-              <div className="text-box flex flex-col gap-3 text-end">
-                <h1 className="text-base font-semibold">{item.title}</h1>
-                <small className="text-red-600 text-xs">{item.date}</small>
-                <p className="text-sm">{item.description}</p>
+              <img src="/record.png" alt="" />
+              <div className="text-box flex flex-col gap-1 sm:gap-3 sm:text-end shadow-lg rounded-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <h1 className="text-base sm:text-lg font-semibold text-white">
+                  {item.title}
+                </h1>
+                <small className="text-[#D21C23] font-semibold text-[10px] sm:text-xs">
+                  {item.date}
+                </small>
+                <p className="text-[12px] sm:text-sm text-gray-300">
+                  {item.description}
+                </p>
                 <div className="left-container-arrow"></div>
               </div>
             </motion.div>
@@ -89,11 +95,17 @@ const Newfile = () => {
               transition={{ duration: 1, delay: index * 0.2 + 0.1 }}
               className="containers right-container"
             >
-              <img src="/hi.png" alt="" />
-              <div className="text-box flex flex-col gap-3">
-                <h1 className="text-base font-semibold">{item.title}</h1>
-                <small className="text-red-600 text-xs">{item.date}</small>
-                <p className="text-sm">{item.description}</p>
+              <img src="/record.png" alt="" />
+              <div className="text-box  flex flex-col gap-3  shadow-lg rounded-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <h1 className="text-base sm:text-lg font-semibold text-white">
+                  {item.title}
+                </h1>
+                <small className="text-[#D21C23] text-[10px] font-semibold sm:text-xs">
+                  {item.date}
+                </small>
+                <p className="text-[12px] sm:text-sm text-gray-300">
+                  {item.description}
+                </p>
                 <div className="right-container-arrow"></div>
               </div>
             </motion.div>

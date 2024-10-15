@@ -191,7 +191,9 @@ nav a.active {
 .text-box {
   padding: 20px 30px;
   color: white;
-  background: #1d2024;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(62, 67, 74, 0.75);
   position: relative;
   border-radius: 6px;
   font-size: 15px;
@@ -205,15 +207,15 @@ nav a.active {
 
 .containers img {
   position: absolute;
-  width: 40px;
+  width: 30px;
   border-radius: 50%;
-  right: -20px;
+  right: -15px;
   top: 32px;
   z-index: 10;
 }
 
 .right-container img {
-  left: -20px;
+  left: -15px;
 }
 
 .timeline::after {
@@ -221,7 +223,7 @@ nav a.active {
   position: absolute;
   width: 6px;
   height: 100%;
-  background-color: #1d2024;
+  background-color: #3e434a85;
   top: 0;
   margin-left: -3px;
   left: 50%;
@@ -246,8 +248,10 @@ nav a.active {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #1d2024;
+  border-right: 15px solid rgba(62, 67, 74, 0.75);
   left: -14px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 .left-container-arrow {
   height: 0;
@@ -257,8 +261,10 @@ nav a.active {
   z-index: 1;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #1d2024;
+  border-left: 15px solid rgba(62, 67, 74, 0.75);
   right: -14px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
 
 @media screen and (max-width: 600px) {
@@ -286,13 +292,13 @@ nav a.active {
 
   .left-container img,
   .right-container img {
-    left: 10px;
+    left: 15px;
   }
 
   .left-container-arrow,
   .right-container-arrow {
-    border-right: 15px solid #fff;
+    border-right: 15px solid #3e434a85;
     border-left: 0;
-    left: 15px;
+    left: -15px;
   }
 }
