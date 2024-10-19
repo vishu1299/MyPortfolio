@@ -32,7 +32,7 @@ const Newfile = () => {
             alt="About Icon"
           />
           <h1 className="my-auto font-bold text-xs sm:text-[10px] lg:text-sm text-[#D21C23]">
-            MY Resume
+            My Resume
           </h1>
           <img
             className="w-[1rem] my-auto"
@@ -55,14 +55,18 @@ const Newfile = () => {
         {/* Left Container 1 */}
         <motion.div
           ref={leftContainerRef1}
-          initial={{ opacity: 0, x: isMobile ? 100 : -100 }} // Adjust based on screen size
-          animate={leftInView1 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 0.1 }} // Initial delay for first item
+          initial={{
+            opacity: 0,
+            y: isMobile ? -100 : 0,
+            x: isMobile ? 0 : -100,
+          }} // Animate from top for mobile, left for large screens
+          animate={leftInView1 ? { opacity: 1, y: 0, x: 0 } : {}}
+          transition={{ duration: 1, delay: 0.1 }}
           className="containers left-container"
         >
           <img src="/record.png" alt="" />
           <div className="text-box flex flex-col gap-1 sm:gap-3 sm:text-end shadow-lg rounded-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            <h1 className="text-base lg:text-lg font-semibold text-white">
+            <h1 className="text-sm lg:text-lg font-semibold text-white">
               Frontend Developer at Xcrino
             </h1>
             <small className="text-[#D21C23] font-semibold text-[10px] sm:text-xs">
@@ -80,14 +84,18 @@ const Newfile = () => {
         {/* Right Container 1 */}
         <motion.div
           ref={rightContainerRef1}
-          initial={{ opacity: 0, x: isMobile ? 100 : 100 }} // Adjust based on screen size
-          animate={rightInView1 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 0.5 }} // Increased delay for the second item
+          initial={{
+            opacity: 0,
+            y: isMobile ? -100 : 0,
+            x: isMobile ? 0 : 100,
+          }} // Animate from top for mobile, right for large screens
+          animate={rightInView1 ? { opacity: 1, y: 0, x: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
           className="containers right-container"
         >
           <img src="/record.png" alt="" />
           <div className="text-box flex flex-col gap-3 shadow-lg rounded-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            <h1 className="text-base lg:text-lg font-semibold text-white ">
+            <h1 className="text-sm lg:text-lg font-semibold text-white">
               MCA (Master's Of Computer Science)
             </h1>
             <small className="text-[#D21C23] text-[10px] font-semibold sm:text-xs">
@@ -104,15 +112,19 @@ const Newfile = () => {
         {/* Left Container 2 */}
         <motion.div
           ref={leftContainerRef2}
-          initial={{ opacity: 0, x: isMobile ? 100 : -100 }} // Adjust based on screen size
-          animate={leftInView2 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 1.0 }} // Further increased delay
+          initial={{
+            opacity: 0,
+            y: isMobile ? -100 : 0,
+            x: isMobile ? 0 : -100,
+          }} // Animate from top for mobile, left for large screens
+          animate={leftInView2 ? { opacity: 1, y: 0, x: 0 } : {}}
+          transition={{ duration: 1, delay: 1.0 }}
           className="containers left-container"
         >
           <img src="/record.png" alt="" />
           <div className="text-box flex flex-col gap-1 sm:gap-3 sm:text-end shadow-lg rounded-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            <h1 className="text-base lg:text-lg font-semibold text-white">
-              Bca (Bachelor's in Computer Applications)
+            <h1 className="text-sm lg:text-lg font-semibold text-white">
+              BCA (Bachelor's in Computer Applications)
             </h1>
             <small className="text-[#D21C23] font-semibold text-[10px] sm:text-xs">
               2020 - 2023
@@ -129,14 +141,18 @@ const Newfile = () => {
         {/* Right Container 2 */}
         <motion.div
           ref={rightContainerRef2}
-          initial={{ opacity: 0, x: isMobile ? 100 : 100 }} // Adjust based on screen size
-          animate={rightInView2 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, delay: 1.5 }} // Increased delay for the fourth item
+          initial={{
+            opacity: 0,
+            y: isMobile ? -100 : 0,
+            x: isMobile ? 0 : 100,
+          }} // Animate from top for mobile, right for large screens
+          animate={rightInView2 ? { opacity: 1, y: 0, x: 0 } : {}}
+          transition={{ duration: 1, delay: 1.5 }}
           className="containers right-container"
         >
           <img src="/record.png" alt="" />
           <div className="text-box flex flex-col gap-3 shadow-lg rounded-lg p-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            <h1 className="text-base lg:text-lg font-semibold text-white">
+            <h1 className="text-sm lg:text-lg font-semibold text-white">
               Class 12th
             </h1>
             <small className="text-[#D21C23] text-[10px] font-semibold sm:text-xs">
