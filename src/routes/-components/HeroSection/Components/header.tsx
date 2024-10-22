@@ -46,7 +46,7 @@ function Header() {
               duration={500}
               offset={-50}
             >
-              PORTFOLIO
+              RESUME
             </Link>
             <Link
               to="work"

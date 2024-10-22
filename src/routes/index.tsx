@@ -5,6 +5,7 @@ import Skills from "./-components/Skills/skills";
 
 import Newfile from "./-components/Resume/resume";
 import MyPortfolio from "./-components/My Portfolio/myPortfolio";
+import Services from "./-components/Services/services";
 // import { Portfolio } from "./-components/Portfolio/portfolio";
 export const Route = createFileRoute("/")({
   component: () => (
@@ -18,6 +19,7 @@ export const Route = createFileRoute("/")({
           {/* <Portfolio /> */}
           <Newfile />
           <MyPortfolio />
+          <Services />
         </div>
         <div className="fixed lg:bottom-2 2xl:bottom-12 right-5 hidden sm:flex">
           <div className="w-24 h-24 lg:w-32 lg:h-32 ">

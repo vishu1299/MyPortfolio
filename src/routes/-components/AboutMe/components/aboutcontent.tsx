@@ -46,10 +46,10 @@ function AboutContent() {
               ABOUT ME
             </h1>
           </div>
-          <div className="text-2xl xl:text-5xl font-extrabold leading-[1.5] xl:leading-[1.3]">
+
+          <div className="text-xl lg:text-2xl xl:text-5xl font-extrabold leading-[1.5] xl:leading-[1.3]">
             <h1>Creating Seamless User Experiences for the Web</h1>
           </div>
-
           <div className="flex flex-col gap-3">
             <p className="text-xs xl:text-base font-normal text-[#C4CFDE] xl:w-[85%]">
               As a frontend developer, I translate UI/UX designs into
