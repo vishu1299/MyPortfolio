@@ -8,7 +8,7 @@ function Skills() {
     <>
       <div
         id="skills"
-        className="flex flex-col justify-center h-full items-center shrink-0 mt-10 md:mt-24 lg:mt-24 xl:mt-40 responsive-div"
+        className="flex flex-col justify-center h-full items-center shrink-0 mt-16 md:mt-24 lg:mt-24 xl:mt-40 responsive-div"
       >
         <div className="w-[97%] h-full sm:w-full relative ">
           <img

@@ -62,7 +62,7 @@ function Services_offered() {
               />
             </div>
           </div>
-          <div className=" text-white h-[17rem] lg:h-[23rem]  xl:h-[28rem]  xl:p-6 pt-0 overflow-y-scroll skills sm:w-[40%]">
+          <div className=" text-white h-[20rem] md:h-[17rem] shadow-md sm:shadow-none shadow-slate-500 lg:h-[23rem]  xl:h-[30rem]  xl:p-6 pt-0 overflow-y-scroll skills sm:w-[40%]">
             {services.map((service, index) => (
               <div
                 key={index}

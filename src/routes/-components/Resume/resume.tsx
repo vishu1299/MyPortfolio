@@ -23,7 +23,7 @@ const Newfile = () => {
     <>
       <div
         id="portfolio"
-        className="mx-auto sm:pb-16 pt-10 px-4 md:px-8 lg:px-10 text-center flex flex-col gap-3 shrink-0 mt-64 md:mt-20 lg:mt-24 xl:mt-36 responsive-div"
+        className="mx-auto sm:pb-16 pt-10 px-4 md:px-8 lg:px-10 text-center flex flex-col gap-3 shrink-0 mt-72 md:mt-20 lg:mt-24 xl:mt-36 responsive-div"
       >
         <div className="flex gap-3 justify-center items-center">
           <img
@@ -43,7 +43,7 @@ const Newfile = () => {
         <h2 className="text-xl lg:text-2xl xl:text-3xl font-extrabold leading-[1.5] xl:leading-[1.3] text-white">
           Journey of Continuous Learning
         </h2>
-        <p className="text-neutral-400 dark:text-neutral-300 text-xs md:text-base text-start line-clamp-3 sm:line-clamp-none sm:mx-auto sm:text-center md:[80%] xl:w-[70%]">
+        <p className="text-neutral-400 dark:text-neutral-300 text-xs md:text-base text-start line-clamp-3 sm:line-clamp-none sm:mx-auto sm:text-center xl:w-[70%]">
           As I advance through my career, I continuously seek out new challenges
           and opportunities for growth. Every step forward refines my skills
           pushing me to deliver better, smarter, and more efficient solutions in

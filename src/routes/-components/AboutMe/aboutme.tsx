@@ -8,7 +8,7 @@ function Aboutme() {
       <div
         id="about"
         // agar jo index.tsx mai gap diya hai vo theek na lagai to add md:mt-40 lg:mt-52  xl:mt-80 responsive-div this in this div and remove that css in index.tsx
-        className="shrink-0  mb-5 mt-10 md:mt-40 lg:mt-52 xl:mt-80 responsive-div"
+        className="shrink-0   mt-24 md:mt-40 lg:mt-52 xl:mt-80 responsive-div"
       >
         <div className="grid grid-cols-1 md:grid-cols-2  ">
           <div className="w-full flex relative h-full order-2 sm:order-1 my-auto">

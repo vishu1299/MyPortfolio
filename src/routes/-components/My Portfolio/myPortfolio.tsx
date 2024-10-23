@@ -1,7 +1,7 @@
 function MyPortfolio() {
   return (
     <>
-      <div className="flex justify-center items-center w-full shrink-0 mt-24 sm:mt-36 lg:mt-48 xl:mt-52 responsive-div">
+      <div className="flex justify-center items-center w-full shrink-0 mt-24 sm:mt-36 lg:mt-40 xl:mt-52 responsive-div">
         <div className="grid sm:gap-24 xl:gap-32  sm:grid-cols-2 xl:w-[70%] w-[90%]">
           {/* component 1 */}
           <div className="flex flex-col gap-5">
