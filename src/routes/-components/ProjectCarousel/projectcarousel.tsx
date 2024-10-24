@@ -31,7 +31,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div">
+    <div className="flex justify-center items-center w-full shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div mb-5">
       <div className=" lg:w-[80%] w-[90%] text-white">
         <div className="flex flex-col gap-y-10 sm:flex-row w-full justify-between mb-4 sm:mb-16">
           {/* Heading */}
@@ -52,7 +52,7 @@ const Projects = () => {
           </div>
 
           {/* Navigation with React Icons */}
-          <div className="flex gap-2 my-auto">
+          <div className="flex gap-2 my-auto justify-end sm:justify-start">
             <button className="bg-[#D21C23] w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] rounded-full flex justify-center items-center">
               <FaArrowLeft className="text-white" /> {/* Left Arrow Icon */}
             </button>
