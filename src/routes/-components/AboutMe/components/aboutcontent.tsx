@@ -3,29 +3,6 @@ import { FaChevronRight } from "react-icons/fa6";
 import { FiCheckCircle } from "react-icons/fi";
 
 function AboutContent() {
-  // const contactInfo = [
-  //   {
-  //     icon: "/Aicon.png", // or a path to an image
-  //     label: "Phone",
-  //     values: "(+91) 9416979830",
-  //   },
-  //   {
-  //     icon: "/Aicon2.png",
-  //     label: "Email",
-  //     values: "vishvasgupta2002@gmail.com",
-  //   },
-  //   {
-  //     icon: "/Aicon3.png",
-  //     label: "Address",
-  //     values: "Bahagurgarh,Haryana",
-  //   },
-  //   {
-  //     icon: "/Aicon4.png",
-  //     label: "Websites",
-  //     values: "www.website.com",
-  //   },
-  // ];
-
   const expertiseItems = [
     { id: 1, label: "Wireframing and Prototyping" },
     { id: 2, label: "Usability Testing Device" },

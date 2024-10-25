@@ -31,7 +31,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div mb-5">
+    <div
+      id="work"
+      className="flex justify-center items-center w-full shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div "
+    >
       <div className=" lg:w-[80%] w-[90%] text-white">
         <div className="flex flex-col gap-y-10 sm:flex-row w-full justify-between mb-4 sm:mb-16">
           {/* Heading */}
@@ -43,10 +46,10 @@ const Projects = () => {
                 alt="About Icon"
               />
               <h1 className="my-auto font-bold text-xs sm:text-[10px] lg:text-[14px] text-[#D21C23]">
-                MY SERVICES
+                MY WORK
               </h1>
             </div>
-            <h1 className="text-xl lg:text-2xl xl:text-4xl w-full sm:w-[70%]  font-extrabold leading-[1.5] xl:leading-[1.3] text-white">
+            <h1 className="text-xl lg:text-2xl xl:text-4xl 2xl:text-[44px] w-full sm:w-[70%]  font-extrabold leading-[1.5] xl:leading-[1.3] text-white">
               Take a Look at What I've Built
             </h1>
           </div>

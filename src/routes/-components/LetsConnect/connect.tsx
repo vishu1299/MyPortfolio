@@ -1,7 +1,10 @@
 const Connect = () => {
   return (
     <>
-      <div className="flex justify-center items-center w-full  shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div">
+      <div
+        
+        className="flex justify-center items-center w-full  shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div"
+      >
         <div className="w-[90%] lg:w-[80%]">
           <div className="grid grid-cols-5">
             <div className="col-span-1 hidden sm:flex flex-col gap-28 mx-auto">
@@ -16,7 +19,7 @@ const Connect = () => {
                 alt=""
               />
             </div>
-            <div className="mx-auto my-auto flex flex-col gap-3 col-span-5 sm:col-span-3">
+            <div className="mx-auto my-auto flex flex-col gap-5 col-span-5 sm:col-span-3">
               <div className="flex gap-3 justify-center items-center ">
                 <img
                   className="w-[1rem] my-auto"

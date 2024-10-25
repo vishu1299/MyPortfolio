@@ -86,7 +86,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: gray;
+  background: #212428;
   border-radius: 5px; /* Add border radius to the track */
 }
 
@@ -121,7 +121,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #212428;
+  background: #ffffff;
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
