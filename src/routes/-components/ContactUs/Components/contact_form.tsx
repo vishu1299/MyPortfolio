@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+// import { FaTriangleExclamation } from "react-icons/fa6";
+import { FiAlertTriangle } from "react-icons/fi";
 
 const Contact_form = () => {
   const {
@@ -11,11 +13,11 @@ const Contact_form = () => {
   const onSubmit = (data: any) => {
     console.log(data);
     alert("Congratulations Your message Has Been Sent");
-    reset();
+    reset(); // this is used to empty the form after each sumit
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="bg-[#171a1e58] p-6 sm:p-10 rounded-xl w-full ">
+      <div className="bg-[#171a1e58] p-4 sm:p-10 rounded-xl w-full ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
           <div>
             <label className="block text-white mb-3">Your Name:</label>
@@ -34,9 +36,16 @@ const Contact_form = () => {
                 },
               })}
             />
-            {errors.name?.message && (
-              <p className="text-red-600 pt-2">{String(errors.name.message)}</p>
-            )}
+            <div>
+              {errors.name?.message && (
+                <div className="flex gap-2 pt-2">
+                  <FiAlertTriangle className="text-[#D21C23] my-auto text-xl" />
+                  <p className="text-[#D21C23]  font-semibold text-sm">
+                    {String(errors.name.message)}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
           <div>
             <label className="block text-white mb-3">Your Email:</label>
@@ -53,9 +62,12 @@ const Contact_form = () => {
               })}
             />
             {errors.Email?.message && (
-              <p className="text-red-600 pt-2">
-                {String(errors.Email.message)}
-              </p>
+              <div className="flex gap-2 pt-2">
+                <FiAlertTriangle className="text-[#D21C23] my-auto text-xl" />
+                <p className="text-[#D21C23]  font-semibold text-sm">
+                  {String(errors.Email.message)}
+                </p>
+              </div>
             )}
           </div>
         </div>
@@ -79,16 +91,19 @@ const Contact_form = () => {
             })}
           />
           {errors.Question?.message && (
-            <p className="text-red-600 pt-2">
-              {String(errors.Question.message)}
-            </p>
+            <div className="flex gap-2 pt-2">
+              <FiAlertTriangle className="text-[#D21C23] my-auto text-xl" />
+              <p className="text-[#D21C23]  font-semibold text-sm">
+                {String(errors.Question.message)}
+              </p>
+            </div>
           )}
         </div>
 
         <div className="mt-8">
           <label className="block text-white mb-3">Your Comment:</label>
           <textarea
-            rows={8}
+            rows={6}
             placeholder="Message :"
             className="w-full p-2 rounded-md border focus:outline-none bg-transparent border-[#c4cfde61] text-gray-300 placeholder-gray-400"
             {...register("Comment", {
@@ -99,7 +114,7 @@ const Contact_form = () => {
             })}
           />
           {errors.Comment?.message && (
-            <p className="text-red-600 pt-2">
+            <p className="text-[#D21C23] pt-2 font-semibold text-sm">
               {String(errors.Comment.message)}
             </p>
           )}
