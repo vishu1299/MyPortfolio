@@ -20,7 +20,10 @@ const Contact_us = () => {
   ];
   return (
     <>
-      <div className="flex justify-center w-full items-center  shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div mb-5">
+      <div
+        id="contact"
+        className="flex justify-center w-full items-center  shrink-0 mt-28 sm:mt-20 lg:mt-32 xl:mt-52 responsive-div"
+      >
         <div className="w-[90%] lg:w-[80%]">
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
             <div className="flex flex-col gap-10">
