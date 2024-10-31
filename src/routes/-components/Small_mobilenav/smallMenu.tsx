@@ -12,7 +12,7 @@ function Mobilenav() {
   const [activeNav, setActiveNav] = useState("#home");
   return (
     <div className="sm:hidden fixed bottom-0 z-50 w-full">
-      <nav className="bg-[#1E1E1F] border border-[#383838] flex bottom-0 rounded-t-3xl rounded-r-3xl w-full  justify-center ">
+      <nav className="bg-[#171A1E] border border-[#383838] flex bottom-0 rounded-t-3xl  w-full  justify-center ">
         <Link
           to="home"
           onClick={() => setActiveNav("#home")}
