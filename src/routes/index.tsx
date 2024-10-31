@@ -11,12 +11,14 @@ import Connect from "./-components/LetsConnect/connect";
 import Projects from "./-components/ProjectCarousel/projectcarousel";
 import Contact_us from "./-components/ContactUs/contact_us";
 import Footer from "./-components/Footer/footer";
+import Mobilenav from "./-components/smallMenu";
 // import { Portfolio } from "./-components/Portfolio/portfolio";
 export const Route = createFileRoute("/")({
   component: () => (
     <>
       <div className=" flex flex-col justify-center items-center ">
         {/* flex flex-col gap-10 xl:gap-80 sm:gap-36 lg:gap-60 */}
+        <Mobilenav />
         <div className="w-[98%] max-w-[1536px] ">
           <Herosection />
           <Aboutme />

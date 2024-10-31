@@ -31,7 +31,7 @@ function Services_offered() {
 
   return (
     <>
-      <div className="flex justify-center items-center w-full xl:h-[41rem] 2xl:h-[42.5rem] sm:h-[23rem] lg:h-[30rem]  z-50 ">
+      <div className="flex justify-center items-center w-full xl:h-[41rem] 2xl:h-[42.5rem] sm:h-[23rem] lg:h-[30rem]  z-40 ">
         <div className="text-white w-[90%] sm:w-[95%] flex flex-col sm:flex-row gap-14 sm:gap-0 justify-center ">
           <div className="flex flex-col gap-5 sm:w-[40%]">
             <div className="flex gap-3 ">

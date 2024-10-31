@@ -97,7 +97,7 @@ nav {
   /* bottom: 0; */
   display: flex;
   gap: 0.8rem;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
   backdrop-filter: blur(15px);
 }
 
