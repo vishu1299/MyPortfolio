@@ -32,7 +32,7 @@ function Mobile_header() {
     <div className="">
       <div>
         {scrollPosition >= 100 && scrollPosition <= 7130 && (
-          <nav className="hidden sm:flex rounded-3xl">
+          <nav className="hidden sm:flex rounded-[3rem]">
             {/* <h1 className="text-white">{scrollPosition}</h1> */}
             <Link
               to="home"
