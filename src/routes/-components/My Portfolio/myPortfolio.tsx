@@ -22,7 +22,7 @@ function MyPortfolio() {
             </div>
             <div className="flex flex-col gap-3 mx-auto sm:mx-0">
               <img
-                src="/project-1.jpg"
+                src="sample_project1.png"
                 className="h-full w-full   rounded-2xl"
                 alt=""
               />

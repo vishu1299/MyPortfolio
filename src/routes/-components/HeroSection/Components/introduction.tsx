@@ -7,7 +7,7 @@ import { useState } from "react";
 function Introduction() {
   const [isDownloaded, setIsDownloaded] = useState(false);
   const downloadPDF = () => {
-    const pdfUrl = "/public/vishwas.pdf"; // Specify the URL or path to your PDF file
+    const pdfUrl = "/public/VishwasResume.pdf"; // Specify the URL or path to your PDF file
     const fileName = "vishwas.pdf";
 
     // Fetch the PDF file
