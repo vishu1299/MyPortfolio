@@ -26,32 +26,32 @@ function Skills_slider() {
         {/** Array of skills with text */}
         {[
           {
-            imgSrc:
-              "https://img.freepik.com/free-photo/3d-rendring-astronaut_23-2151128649.jpg?ga=GA1.1.1127710408.1719834612",
+            imgSrc: "/skill-bg3.png",
             title: "React",
             description: "Build dynamic user interfaces.",
             progress: 85,
+            color: "#00DBF6",
           },
           {
-            imgSrc:
-              "https://img.freepik.com/free-photo/3d-rendring-astronauts_23-2151128700.jpg?ga=GA1.1.1127710408.1719834612",
+            imgSrc: "/skill-bg1.png",
             title: "JavaScript",
             description: "The language of the web.",
             progress: 90,
+            color: "#FBD725",
           },
           {
-            imgSrc:
-              "https://img.freepik.com/free-photo/spaceman-riding-horse-outer-space-neon-style_23-2151605194.jpg?ga=GA1.1.1127710408.1719834612",
+            imgSrc: "/skill-bg4.png",
             title: "CSS",
             description: "Style your web with flair.",
             progress: 80,
+            color: "#35A8DB",
           },
           {
-            imgSrc:
-              "https://img.freepik.com/free-photo/3d-rendring-astronaut_23-2151128635.jpg?ga=GA1.1.1127710408.1719834612",
+            imgSrc: "/skill-bg2.png",
             title: "HTML",
             description: "Structure your web content.",
             progress: 75,
+            color: "#F88736",
           },
         ].map((skill, index) => (
           <SwiperSlide key={index} className="relative">
@@ -72,8 +72,11 @@ function Skills_slider() {
               {/** Progress Bar with Animation */}
               <div className="w-full bg-gray-300 rounded-full mb-2">
                 <div
-                  className="bg-red-500 h-1 xl:h-2 rounded-full transition-all duration-1000"
-                  style={{ width: `${skill.progress}%` }}
+                  className="h-1 xl:h-2 rounded-full transition-all duration-1000 "
+                  style={{
+                    width: `${skill.progress}%`,
+                    backgroundColor: `${skill.color}`,
+                  }}
                 ></div>
               </div>
               <p className="text-white text-[10px] lg:text-sm mb-1">
