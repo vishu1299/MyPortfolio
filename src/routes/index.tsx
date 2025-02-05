@@ -13,6 +13,7 @@ import Contact_us from "./-components/ContactUs/contact_us";
 import Footer from "./-components/Footer/footer";
 import Mobilenav from "./-components/Small_mobilenav/smallMenu";
 // import { Portfolio } from "./-components/Portfolio/portfolio";
+
 export const Route = createFileRoute("/")({
   component: () => (
     <>
