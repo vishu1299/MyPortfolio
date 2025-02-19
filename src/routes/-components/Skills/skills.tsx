@@ -16,7 +16,7 @@ function Skills() {
             src="/Skills1.png"
             alt=""
           />
-          <div className=" mx-auto w-[90%] gap-y-12 sm:w-[60%] grid grid-cols-1 sm:grid-cols-3 justify-center items-center h-[22rem] sm:h-[16rem] lg:h-[20rem] xl:h-[26rem] 2xl:h-[30rem] lg:gap-0 sm:gap-x-5 xl:gap-x-5 ">
+          <div className=" mx-auto w-[90%] gap-y-12 sm:w-[60%] grid grid-cols-1 sm:grid-cols-3 justify-center items-center h-[22rem] sm:h-[16rem] lg:h-[20rem] xl:h-[29rem] 2xl:h-[30rem] lg:gap-0 sm:gap-x-5 xl:gap-x-5 ">
             <Skills_intro />
             {/* <My_skills /> */}
             <Skills_slider />
