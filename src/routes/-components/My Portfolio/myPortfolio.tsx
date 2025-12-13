@@ -27,10 +27,10 @@ function MyPortfolio() {
                 alt=""
               />
               <h1 className="font-semibold text-sm xl:text-base text-[#D21C23]">
-                IntuiInteract Design
+                My Portfolio
               </h1>
               <h1 className=" text-base xl:text-xl font-bold text-white">
-                Designing the Future Today
+                Represents My Skills
               </h1>
             </div>
           </div>
@@ -38,12 +38,12 @@ function MyPortfolio() {
           <div className="flex flex-col gap-3 mx-auto">
             <div className="flex flex-col gap-3">
               <img
-                src="/project-1.jpg"
+                src="/emiralgigprojectimg.png"
                 className="h-full w-full  mt-10 sm:mt-0 rounded-2xl"
                 alt=""
               />
               <h1 className="font-semibold text-sm xl:text-base text-[#D21C23]">
-                IntuiInteract Design
+                Dashboard Design
               </h1>
               <h1 className=" text-base xl:text-xl font-bold text-white">
                 Designing the Future Today
@@ -51,15 +51,15 @@ function MyPortfolio() {
             </div>
             <div className="flex flex-col gap-3">
               <img
-                src="/project-1.jpg"
+                src="/Passionseed.png"
                 className="h-full w-full  mt-10 rounded-2xl"
                 alt=""
               />
               <h1 className="font-semibold text-sm xl:text-base text-[#D21C23]">
-                IntuiInteract Design
+                Streaming website
               </h1>
               <h1 className=" text-base xl:text-xl font-bold text-white">
-                Designing the Future Today
+                Start Your Future as Streamer Today
               </h1>
             </div>
           </div>

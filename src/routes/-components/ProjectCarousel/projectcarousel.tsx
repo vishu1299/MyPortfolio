@@ -3,36 +3,42 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
   const cards = [
-    {
-      date: "01 April, 2023",
-      title: "Crafting Experiences One Pixel at a Time",
-      image: "",
+  {
+      date: "July 2025",
+      title: "Emiral Website",
+      image: "/emiral-website.png",
+      link: "https://emirals.vercel.app/",
     },
     {
-      date: "02 April, 2023",
-      title: "Designing the Future One Click at a Time",
-      image: "",
+      date: "August 2025",
+      title: "Emiral Dashboard",
+      image: "/emiral-dashboard.png",
+      link: "https://mlm-self.vercel.app/",
+    },
+  
+    {
+      date: "September 2025",
+      title: "Fazza Website",
+      image: "/Fazza-website.png",
+      link: "https://fazza-two.vercel.app/",
     },
     {
-      date: "03 April, 2023",
-      title: "Designing Tomorrow's Experiences Today",
-      image: "",
+      date: "November 2025",
+      title: "Passionseed",
+      image: "/Passionseed.png",
+      link: "https://dev.passionseed.com/",
     },
     {
-      date: "04 April, 2023",
-      title: "Exploring New Frontiers of Design",
-      image: "",
-    },
-    {
-      date: "05 April, 2023",
-      title: "Shaping a More Interactive Future",
-      image: "",
+      date: "December 2025",
+      title: "7 States",
+      image: "/7states.png",
+      link: "https://7-states-mv8t.vercel.app/",
     },
   ];
 
   const [startIndex, setStartIndex] = useState(0);
   const totalCards = cards.length;
-  const visibleCardsCount = 3; // Number of cards visible at a time
+  const visibleCardsCount = 3; 
 
   const handleNext = () => {
     setStartIndex((prevIndex) => (prevIndex + 1) % totalCards);
@@ -93,14 +99,20 @@ const Projects = () => {
                   key={index}
                   className={`bg-transparent sm:p-6 ${i !== visibleCardsCount - 1 ? "border-r border-[#c4cfde7c] pr-6" : ""}`}
                 >
-                  <div className="bg-[#C4CFDE] h-[217px] w-full mb-6 rounded-xl"></div>
+                  <div className="bg-slate-100 p-2 h-auto w-full mb-6 rounded-xl">
+                    <img
+                      src={cards[index].image}
+                      alt={cards[index].title}
+                      className="w-full h-auto object-contain rounded-xl"
+                    />
+                  </div>
                   <p className="text-gray-400">{cards[index].date}</p>
                   <h3 className="text-xl font-semibold mb-4">
                     {cards[index].title}
                   </h3>
-                  <button className="text-red-500 font-medium text-sm">
+                  <a target="_blank" href={cards[index].link} className="text-red-500 font-medium text-sm">
                     VISIT SITE
-                  </button>
+                  </a>
                 </div>
               );
             })}
