@@ -237,7 +237,7 @@ const Footer: React.FC = () => {
       <div className="relative  mt-8 bg-[#1B1E22] pt-4 text-center sm:px-6 sm:py-6">
         <div className="sm:max-w-[90%] mx-auto flex flex-col sm:flex-row gap-4 sm:gap-0 justify-between">
           <p className="my-auto">
-            © 2024 All Rights Reserved{" "}
+            © 2025 All Rights Reserved{" "}
             <span className="text-red-600">Vishwas</span>
           </p>
           <div className="flex justify-center space-x-2 sm:space-x-6 pb-5 sm:pb-0">

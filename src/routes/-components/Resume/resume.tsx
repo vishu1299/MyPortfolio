@@ -99,11 +99,12 @@ const Newfile = () => {
               MCA (Master's Of Computer Science)
             </h1>
             <small className="text-[#D21C23] text-[10px] font-semibold sm:text-xs">
-              2024 - Present
+              2023 - 2025
             </small>
             <p className="text-[12px] sm:text-sm text-gray-300 text-justify line-clamp-4">
-              Pursuing my MCA from Ganga Institute of Technology and Management,
-              affiliated with Maharishi Dayanand University (MDU).
+              Completed my MCA from Ganga Institute of Technology and
+              Management, affiliated with Maharishi Dayanand University (MDU)and
+              secured (CGPA: 7.7)
             </p>
             <div className="right-container-arrow"></div>
           </div>
@@ -132,7 +133,7 @@ const Newfile = () => {
             <p className="text-[12px] sm:text-sm text-gray-300 text-justify line-clamp-4">
               Graduated from Vash College of Engineering, affiliated with (MDU)
               Maharishi Dayanand University, with a first division and
-              distinction (approx. 76%).
+              distinction (CGPA: 7.56)
             </p>
             <div className="left-container-arrow"></div>
           </div>
